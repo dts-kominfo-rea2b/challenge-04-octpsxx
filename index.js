@@ -8,7 +8,39 @@ const dates = [
 ];
 
 // TODO: Buatlah fungsi createDate
-const createDate = null;
+const createDate = (dates, i) => {
+  const arr =[];
+  let result;
+  
+  const xi = i && i == 0;
+  
+  if (xi){
+    result = (Date.parse(dates[p]) / 1000);
+    return result.toString();
+  } 
+  for (let j of dates){
+    arr.push(Date.parse(j) / 1000);
+  }
+  result = arr.sort().join("-");
+  return result;
+}
+// const createDate = (dates, i) => {
+//   if (i != null){
+//     const time = (Date.parse(dates[i]))/1000;
+//     return time.toString();
+//   }
+//   else {
+//     let arr =[];
+//     for(let i of dates){
+//       let time = (Date.parse(dates[i]))/1000;
+//       arr.push(time);
+//     }
+
+//     const hasil = (date.sort()).join("-");
+//     return date2;
+//   }
+// };
+
 
 // ! JANGAN DIMODIFIKASI
 (() => {
